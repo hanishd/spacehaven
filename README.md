@@ -12,10 +12,12 @@ This repository consists of four distinct mods:
 	Based on the "More Foods" mod by Tron762 (https://github.com/Tron762/SpaceHavenMods)
 
 # Crazy Spatz's Items
-  (Not available yet)
+  (Not functional yet)
 	Modifies costs several furniture items for better game balance, replacing the default cost (1 Infra Block, 10 Tools) with more appropriate values.
 	Adds several new furniture items.
 	Adds several new personal inventory items to the game, and modifies some existing ones.
+	
+	NOTE: The balance parts of this mod function at present, but clicking on one of the new inventory items in the Micro-Weaver will crash your game.  As this will send a crash report to the developers, please don't do this for now.
 
 # Crazy Spatz's Refining
 	Overhauls the entire industrial design of this game by creating two parallel lines of refining:
