@@ -65,50 +65,20 @@
 						</additionaFullLit>
 						<features addFacilityIcons="false" noPressureDmg="false" normalState="true" produceInNormal="false" inUseState="true">
 							<produces>
-								<l valuePerSec="0.5" product="965" usePowerPerSec="1.5" suction="false">
+								<l valuePerSec="2" product="965" usePowerPerSec="0.5" suction="false">
 									<logic resource="172" is="GreaterThan" value="0.1"/>
-									<logic resource="178" is="LessThan" value="5"/>
-									<gas hazardGasPerSec="0.2"/>
+									<logic resource="178" is="LessThan" value="10"/>
+									<gas hazardGasPerSec="0.1"/>
 								</l>
-								<l valuePerSec="0.2" product="965" usePowerPerSec="0.6" suction="false">
-									<logic resource="172" is="GreaterThan" value="0.1"/>
-									<logic resource="178" is="LessThan" value="20"/>
-									<gas hazardGasPerSec="0.08"/>
-								</l>
-								<l valuePerSec="0.05" product="965" usePowerPerSec="0.2" suction="false">
-									<logic resource="172" is="GreaterThan" value="0.1"/>
-									<logic resource="178" is="LessThan" value="50"/>
-									<gas hazardGasPerSec="0.02"/>
-								</l>
-								<l valuePerSec="0.5" product="964" usePowerPerSec="1.5" suction="false">
+								<l valuePerSec="2" product="964" usePowerPerSec="0.5" suction="false">
 									<logic resource="158" is="GreaterThan" value="0.1"/>
-									<logic resource="174" is="LessThan" value="5"/>
-									<gas hazardGasPerSec="0.2"/>
+									<logic resource="174" is="LessThan" value="10"/>
+									<gas hazardGasPerSec="0.1"/>
 								</l>
-								<l valuePerSec="0.2" product="964" usePowerPerSec="0.6" suction="false">
-									<logic resource="158" is="GreaterThan" value="0.1"/>
-									<logic resource="174" is="LessThan" value="20"/>
-									<gas hazardGasPerSec="0.08"/>
-								</l>
-								<l valuePerSec="0.05" product="964" usePowerPerSec="0.2" suction="false">
-									<logic resource="158" is="GreaterThan" value="0.1"/>
-									<logic resource="174" is="LessThan" value="50"/>
-									<gas hazardGasPerSec="0.02"/>
-								</l>
-								<l valuePerSec="0.5" product="9996" usePowerPerSec="1.5" suction="false">
+								<l valuePerSec="2" product="9996" usePowerPerSec="0.5" suction="false">
 									<logic resource="171" is="GreaterThan" value="0.1"/>
-									<logic resource="176" is="LessThan" value="5"/>
-									<gas hazardGasPerSec="0.2"/>
-								</l>
-								<l valuePerSec="0.2" product="9996" usePowerPerSec="0.6" suction="false">
-									<logic resource="171" is="GreaterThan" value="0.1"/>
-									<logic resource="176" is="LessThan" value="20"/>
-									<gas hazardGasPerSec="0.08"/>
-								</l>
-								<l valuePerSec="0.05" product="9996" usePowerPerSec="0.2" suction="false">
-									<logic resource="171" is="GreaterThan" value="0.1"/>
-									<logic resource="176" is="LessThan" value="50"/>
-									<gas hazardGasPerSec="0.02"/>
+									<logic resource="176" is="LessThan" value="10"/>
+									<gas hazardGasPerSec="0.1"/>
 								</l>
 							</produces>
 							<stateWatchdog autoproduce="true"/>
@@ -182,52 +152,20 @@
 						</definedStates>
 						<features addFacilityIcons="false" noPressureDmg="false" normalState="true" produceInNormal="false" inUseState="true">
 							<produces>
-								<l valuePerSec="0.5" product="1931" usePowerPerSec="2.0" suction="false">
+								<l valuePerSec="2" product="1931" usePowerPerSec="0.5" suction="false">
 									<logic resource="157" is="GreaterThan" value="0.1"/>
 									<logic resource="170" is="GreaterThan" value="0.1"/>
-									<logic resource="1922" is="LessThan" value="5"/>
+									<logic resource="1922" is="LessThan" value="10"/>
 									<gas hazardGasPerSec="0.2"/>
 								</l>
-								<l valuePerSec="0.2" product="1931" usePowerPerSec="0.8" suction="false">
-									<logic resource="157" is="GreaterThan" value="0.1"/>
-									<logic resource="170" is="GreaterThan" value="0.1"/>
-									<logic resource="1922" is="LessThan" value="20"/>
-									<gas hazardGasPerSec="0.2"/>
-								</l>
-								<l valuePerSec="0.05" product="1931" usePowerPerSec="0.2" suction="false">
-									<logic resource="157" is="GreaterThan" value="0.1"/>
-									<logic resource="170" is="GreaterThan" value="0.1"/>
-									<logic resource="1922" is="LessThan" value="50"/>
-									<gas hazardGasPerSec="0.2"/>
-								</l>
-								<l valuePerSec="1" product="9998" usePowerPerSec="1.0" suction="false">
+								<l valuePerSec="2" product="9998" usePowerPerSec="0.2" suction="false">
 									<logic resource="40" is="GreaterThan" value="0.1"/>
-									<logic resource="16" is="LessThan" value="5"/>
+									<logic resource="16" is="LessThan" value="10"/>
 									<gas hazardGasPerSec="0.1"/>
 								</l>
-								<l valuePerSec="0.4" product="9998" usePowerPerSec="0.4" suction="false">
-									<logic resource="40" is="GreaterThan" value="0.1"/>
-									<logic resource="16" is="LessThan" value="20"/>
-									<gas hazardGasPerSec="0.1"/>
-								</l>
-								<l valuePerSec="0.1" product="9998" usePowerPerSec="0.1" suction="false">
-									<logic resource="40" is="GreaterThan" value="0.1"/>
-									<logic resource="16" is="LessThan" value="50"/>
-									<gas hazardGasPerSec="0.1"/>
-								</l>
-								<l valuePerSec="0.5" product="9997" usePowerPerSec="1.0" suction="false">
+								<l valuePerSec="2" product="9997" usePowerPerSec="0.2" suction="false">
 									<logic resource="1932" is="GreaterThan" value="0.1"/>
-									<logic resource="177" is="LessThan" value="5"/>
-									<gas hazardGasPerSec="0.1"/>
-								</l>
-								<l valuePerSec="0.2" product="9997" usePowerPerSec="0.4" suction="false">
-									<logic resource="1932" is="GreaterThan" value="0.1"/>
-									<logic resource="177" is="LessThan" value="20"/>
-									<gas hazardGasPerSec="0.1"/>
-								</l>
-								<l valuePerSec="0.05" product="9997" usePowerPerSec="0.1" suction="false">
-									<logic resource="1932" is="GreaterThan" value="0.1"/>
-									<logic resource="177" is="LessThan" value="50"/>
+									<logic resource="177" is="LessThan" value="10"/>
 									<gas hazardGasPerSec="0.1"/>
 								</l>
 							</produces>
@@ -351,10 +289,10 @@
 		</product>
 		<product _name="Chemical refining (passive)" eid="9996" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
 			<needs>
-				<l element="171" howMuch="1" consumeEvery="5"/>
+				<l element="171" howMuch="1" consumeEvery="50"/>
 			</needs>
 			<products>
-				<l element="176" howMuch="1" produceEvery="1"/>
+				<l element="176" howMuch="1" produceEvery="10"/>
 			</products>
 			<desc/>
 		</product>
@@ -369,10 +307,10 @@
 		</product>
 		<product _name="Hyperium refining" eid="965" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
 			<needs>
-				<l element="172" howMuch="2" consumeEvery="1"/>
+				<l element="172" howMuch="1" consumeEvery="5"/>
 			</needs>
 			<products>
-				<l element="178" howMuch="1" produceEvery="1"/>
+				<l element="178" howMuch="1" produceEvery="10"/>
 			</products>
 			<desc/>
 		</product>
@@ -423,30 +361,30 @@
 		</product>
 		<product _name="Fabric (passive)" eid="9997" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
 			<needs>
-				<l element="1932" howMuch="1" consumeEvery="4"/>
+				<l element="1932" howMuch="1" consumeEvery="40"/>
 			</needs>
 			<products>
-				<l element="177" howMuch="1" produceEvery="1"/>
-				<l element="71" howMuch="1" produceEvery="5"/>
+				<l element="177" howMuch="1" produceEvery="10"/>
+				<l element="71" howMuch="1" produceEvery="50"/>
 			</products>
 			<desc/>
 		</product>
 		<product _name="Steel Plates" eid="1931" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
 			<needs>
-				<l element="170" howMuch="1" consumeEvery="5"/>
-				<l element="157" howMuch="1" consumeEvery="5"/>
+				<l element="170" howMuch="1" consumeEvery="50"/>
+				<l element="157" howMuch="1" consumeEvery="50"/>
 			</needs>
 			<products>
-				<l element="1922" howMuch="1" produceEvery="1"/>
+				<l element="1922" howMuch="1" produceEvery="10"/>
 			</products>
 			<desc/>
 		</product>
 		<product _name="Ice to Water (passive)" eid="9998" interactive="false" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
 			<needs>
-				<l element="40" consumeEvery="5" howMuch="1" />
+				<l element="40" howMuch="1" consumeEvery="50" />
 			</needs>
 			<products>
-				<l element="16" howMuch="1" produceEvery="1" />
+				<l element="16" howMuch="1" produceEvery="10" />
 			</products>
 			<desc/>
 		</product>

@@ -1,7 +1,8 @@
 # spacehaven
 Mods for the beta of Space Haven, by Spatzimaus
 
-This repository consists of four distinct mods:
+This repository consists of four distinct mods.  For more details on each change, see the descriptions in the modloader (minimum version 0.0.7).
+Note that old savegames are unlikely to work with these mods; new saves are highly recommended.
 
 # Crazy Spatz's Foods
 	Adds four new crops to the game:
@@ -9,7 +10,7 @@ This repository consists of four distinct mods:
 		Cactus: creates Water
 		Brussels Sprouts: emergency food; grows very quickly, but poisonous
 		Tiberium: creates Energium and Chemicals, but produces hazardous gases as it grows.
-	Based on the "More Foods" mod by Tron762 (https://github.com/Tron762/SpaceHavenMods)
+	Based on the "More Foods" mod by Tron762 (https://github.com/Tron762/SpaceHavenMods).  I recommend using that mod as well, as the two are fully compatible.
 
 # Crazy Spatz's Items
   (Not functional yet)
@@ -31,4 +32,4 @@ This repository consists of four distinct mods:
 	The recipes for scrap conversion have also been changed to produce fewer blocks but some intermediate ingredients to make more replacement blocks at an Assembler.
 	Adds a recipe for recycling Rubble.
 
-Each mod must be placed in your /mods/ folder to function.
+Each mod's directory must be placed within your /mods/ folder to function, 

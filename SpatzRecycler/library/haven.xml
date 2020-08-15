@@ -26,27 +26,27 @@
 						</additionaFullLit>
 						<features addFacilityIcons="false" noPressureDmg="false" normalState="true" produceInNormal="false" inUseState="true">
 							<produces>
-								<l valuePerSec="0.2" product="1876" usePowerPerSec="1.0" suction="false">
+								<l valuePerSec="5" product="1876" usePowerPerSec="1.0" suction="false">
 									<logic resource="1874" is="GreaterThan" value="0.1"/>
 									<gas hazardGasPerSec="0.1"/>
 								</l>
-								<l valuePerSec="0.2" product="1877" usePowerPerSec="1.0" suction="false">
+								<l valuePerSec="5" product="1877" usePowerPerSec="1.0" suction="false">
 									<logic resource="1873" is="GreaterThan" value="0.1"/>
 									<gas hazardGasPerSec="0.1"/>
 								</l>
-								<l valuePerSec="0.2" product="1887" usePowerPerSec="1.0" suction="false">
+								<l valuePerSec="5" product="1887" usePowerPerSec="1.0" suction="false">
 									<logic resource="1886" is="GreaterThan" value="0.1"/>
 									<gas hazardGasPerSec="0.1"/>
 								</l>
-								<l valuePerSec="0.2" product="1948" usePowerPerSec="1.0" suction="false">
+								<l valuePerSec="5" product="1948" usePowerPerSec="1.0" suction="false">
 									<logic resource="1947" is="GreaterThan" value="0.1"/>
 									<gas hazardGasPerSec="0.1"/>
 								</l>
-								<l valuePerSec="0.2" product="1949" usePowerPerSec="1.0" suction="false">
+								<l valuePerSec="5" product="1949" usePowerPerSec="1.0" suction="false">
 									<logic resource="1946" is="GreaterThan" value="0.1"/>
 									<gas hazardGasPerSec="0.1"/>
 								</l>
-								<l valuePerSec="0.2" product="9999" usePowerPerSec="2.0" suction="false">
+								<l valuePerSec="5" product="9999" usePowerPerSec="1.0" suction="false">
 									<logic resource="127" is="GreaterThan" value="0.1"/>
 									<gas hazardGasPerSec="0.2"/>
 								</l>
@@ -87,66 +87,66 @@
 		</product>
 		<product eid="1876" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
 			<needs>
-				<l element="1874" howMuch="1" consumeEvery="1"/>
+				<l element="1874" howMuch="1" consumeEvery="10"/>
 			</needs>
 			<products>
-				<l element="1921" howMuch="1" produceEvery="4"/>
-				<l element="1922" howMuch="1" produceEvery="20"/>
-				<l element="177" howMuch="1" produceEvery="10"/>
+				<l element="1921" howMuch="1" produceEvery="40"/>
+				<l element="1922" howMuch="1" produceEvery="200"/>
+				<l element="177" howMuch="1" produceEvery="100"/>
 			</products>
 			<desc/>
 		</product>
 		<product eid="1877" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
 			<needs>
-				<l element="1873" howMuch="1" consumeEvery="1"/>
+				<l element="1873" howMuch="1" consumeEvery="10"/>
 			</needs>
 			<products>
-				<l element="162" howMuch="1" produceEvery="4"/>
-				<l element="1922" howMuch="1" produceEvery="20"/>
-				<l element="173" howMuch="1" produceEvery="20"/>
+				<l element="162" howMuch="1" produceEvery="40"/>
+				<l element="1922" howMuch="1" produceEvery="200"/>
+				<l element="173" howMuch="1" produceEvery="200"/>
 			</products>
 			<desc/>
 		</product>
 		<product eid="1887" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
 			<needs>
-				<l element="1886" howMuch="1" consumeEvery="1"/>
+				<l element="1886" howMuch="1" consumeEvery="10"/>
 			</needs>
 			<products>
-				<l element="1759" howMuch="1" produceEvery="6"/>
-				<l element="1922" howMuch="1" produceEvery="8"/>
+				<l element="1759" howMuch="1" produceEvery="60"/>
+				<l element="1922" howMuch="1" produceEvery="80"/>
 			</products>
 			<desc/>
 		</product>
 		<product eid="1948" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
 			<needs>
-				<l element="1947" howMuch="1" consumeEvery="1"/>
+				<l element="1947" howMuch="1" consumeEvery="10"/>
 			</needs>
 			<products>
-				<l element="1919" howMuch="1" produceEvery="10"/>
-				<l element="174" howMuch="1" produceEvery="6"/>
+				<l element="1919" howMuch="1" produceEvery="100"/>
+				<l element="174" howMuch="1" produceEvery="60"/>
 			</products>
 			<desc/>
 		</product>
 		<product eid="1949" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
 			<needs>
-				<l element="1946" howMuch="1" consumeEvery="1"/>
+				<l element="1946" howMuch="1" consumeEvery="10"/>
 			</needs>
 			<products>
-				<l element="930" howMuch="1" produceEvery="10"/>
-				<l element="173" howMuch="1" produceEvery="4"/>
+				<l element="930" howMuch="1" produceEvery="100"/>
+				<l element="173" howMuch="1" produceEvery="40"/>
 			</products>
 			<desc/>
 		</product>
 		<product _name="Rubble breakdown" eid="9999" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
 			<needs>
-				<l element="127" howMuch="1" consumeEvery="1"/>
+				<l element="127" howMuch="1" consumeEvery="10"/>
 			</needs>
 			<products>
-				<l element="157" howMuch="1" produceEvery="10"/>
-				<l element="170" howMuch="1" produceEvery="10"/>
-				<l element="175" howMuch="1" produceEvery="10"/>
-				<l element="169" howMuch="1" produceEvery="10"/>
-				<l element="177" howMuch="1" produceEvery="10"/>
+				<l element="157" howMuch="1" produceEvery="100"/>
+				<l element="170" howMuch="1" produceEvery="100"/>
+				<l element="175" howMuch="1" produceEvery="100"/>
+				<l element="169" howMuch="1" produceEvery="100"/>
+				<l element="177" howMuch="1" produceEvery="100"/>
 			</products>
 			<desc/>
 		</product>
