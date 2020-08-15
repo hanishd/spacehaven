@@ -1,0 +1,20 @@
+<t>
+	<object_lowtech_refinery_name id="99991" pid="121">
+		<EN>Low-Tech Refinery</EN>
+	</object_lowtech_refinery_name>
+	<object_lowtech_refinery_desc id="99992" pid="121">
+		<EN>Transforms carbon and base metals to steel plates, ice to water, and breaks down rubble. Fully automatic. Releases heat and is noisy. Enclose with walls and a space suit door to ensure a safe working environment.</EN>
+	</object_lowtech_refinery_desc>
+	<object_hightech_refinery_name id="99993" pid="121">
+		<EN>High-Tech Refinery</EN>
+	</object_hightech_refinery_name>
+	<object_hightech_refinery_desc id="99994" pid="121">
+		<EN>Transforms raw chemicals into refined chemicals, energy crystal into energy rods and raw hyperium into hyperfuel. Fully automatic. Releases hazardous gas and is noisy. Enclose with walls and a space suit door to ensure a safe working environment.</EN>
+	</object_hightech_refinery_desc>
+	<object_liquid_purifier_name id="99995" pid="121">
+		<EN>Liquid Purifier</EN>
+	</object_liquid_purifier_name>
+	<object_liquid_purifier_desc id="99996" pid="121">
+		<EN>Transforms ice into potable water, and raw chemicals into refined chemicals.  Requires manual processing.</EN>
+	</object_liquid_purifier_desc>
+</t>

@@ -1,0 +1,23 @@
+<mod>
+  <name>Crazy Spatz's Items</name>
+  <description>
+Version: 1.0
+  
+Adds several new items to the game, and overhauls some existing ones.
+
+> Light (floor lamp) now uses 1 Soft Block instead of 1 Infra Block.  Its light radius is increased from 6 to 8 tiles.
+
+> Vent requires 100 Tools, not 1 Infra Block.  (Doors include a vent, so a vent shouldn't cost nearly as much as a door.)
+
+> Added Hats and Sunglasses.  Both are headgear items; Hats are made at the Micro-Weaver (cost 1 Fabric), Sunglasses at the Item Fabricator (cost 1 Steel Plates).
+
+> Added new recreational facility: TV.  Wall-mounted, weak light source that adds a large comfort to the nearby area; costs 1 Tech Block.  Compared to the Jukebox or Arcade Machine, the TV produces adds more Comfort (and produces light) but in a smaller area, and it must be mounted on a wall.
+
+  </description>
+  <modVersion>1.0</modVersion>
+  <author>Spatzimaus</author>
+  <minimumLoaderVersion>0.0.6</minimumLoaderVersion>
+  <gameVersions>
+    <v>0.9.0</v>
+  </gameVersions>
+</mod>

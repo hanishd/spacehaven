@@ -1,0 +1,154 @@
+<data>
+	<Element>
+		<me mid="1881" ec="1" costGroup="875" offsetRot="R0" nonSymmetrical="false" alternateY="false">
+			<data>
+				<l type="Object" eid="1" gridOffX="0" gridOffY="0" layer="0">
+					<element id="0" userTogglable="false" renderOnFloor="false" walkGridCost="255" lightValue="Low">
+						<definedStates>
+							<l state="Standby" playAnimation="false">
+								<r0 aid="scrapper2-1FHatch" flx="true"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="scrapper2-1BHatch" flx="false"/>
+								<r270 aid="null" flx="false"/>
+							</l>
+							<l state="InUse" playAnimation="true">
+								<r0 aid="scrapper2-1FHatch" flx="true"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="scrapper2-1BHatch" flx="false"/>
+								<r270 aid="null" flx="false"/>
+							</l>
+						</definedStates>
+						<additionaFullLit x="28" y="8" mirX="0" mirY="0" atNoPower="false" atStandby="true" atInuse="true">
+							<r0 aid="scrapper2-1FHLight1" flx="false"/>
+							<r90 aid="null" flx="false"/>
+							<r180 aid="null" flx="false"/>
+							<r270 aid="null" flx="false"/>
+						</additionaFullLit>
+						<features addFacilityIcons="false" noPressureDmg="false" normalState="true" produceInNormal="false" inUseState="true">
+							<produces>
+								<l valuePerSec="0.2" product="1876" usePowerPerSec="1.0" suction="false">
+									<logic resource="1874" is="GreaterThan" value="0.1"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="0.2" product="1877" usePowerPerSec="1.0" suction="false">
+									<logic resource="1873" is="GreaterThan" value="0.1"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="0.2" product="1887" usePowerPerSec="1.0" suction="false">
+									<logic resource="1886" is="GreaterThan" value="0.1"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="0.2" product="1948" usePowerPerSec="1.0" suction="false">
+									<logic resource="1947" is="GreaterThan" value="0.1"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="0.2" product="1949" usePowerPerSec="1.0" suction="false">
+									<logic resource="1946" is="GreaterThan" value="0.1"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="0.2" product="9999" usePowerPerSec="2.0" suction="false">
+									<logic resource="127" is="GreaterThan" value="0.1"/>
+									<gas hazardGasPerSec="0.2"/>
+								</l>
+							</produces>
+							<stateWatchdog autoproduce="true"/>
+							<noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
+								<noise noise="20.0">
+									<audio auid="null"/>
+								</noise>
+								<radiusBeauty roomDrop="40" value="-60" radius="12"/>
+							</noiseAndComfort>
+						</features>
+						<boxHatch x="16" y="0" boxX="16" boxY="0" in="true" out="false" flipR90="false" type2="false">
+							<activate activateOffX="0" activateOffY="-1"/>
+						</boxHatch>
+						<commonPower/>
+					</element>
+				</l>
+			</data>
+			<linked/>
+			<events/>
+		</me>
+	</Element>
+	<Product>
+		<product eid="1879" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="true" composter="false" processValue="100">
+			<needs/>
+			<products/>
+			<list>
+				<processes>
+					<l process="1876"/>
+					<l process="1877"/>
+					<l process="1887"/>
+					<l process="1948"/>
+					<l process="1949"/>
+				</processes>
+			</list>
+			<desc/>
+		</product>
+		<product eid="1876" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="1874" howMuch="1" consumeEvery="1"/>
+			</needs>
+			<products>
+				<l element="1921" howMuch="1" produceEvery="4"/>
+				<l element="1922" howMuch="1" produceEvery="20"/>
+				<l element="177" howMuch="1" produceEvery="10"/>
+			</products>
+			<desc/>
+		</product>
+		<product eid="1877" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="1873" howMuch="1" consumeEvery="1"/>
+			</needs>
+			<products>
+				<l element="162" howMuch="1" produceEvery="4"/>
+				<l element="1922" howMuch="1" produceEvery="20"/>
+				<l element="173" howMuch="1" produceEvery="20"/>
+			</products>
+			<desc/>
+		</product>
+		<product eid="1887" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="1886" howMuch="1" consumeEvery="1"/>
+			</needs>
+			<products>
+				<l element="1759" howMuch="1" produceEvery="6"/>
+				<l element="1922" howMuch="1" produceEvery="8"/>
+			</products>
+			<desc/>
+		</product>
+		<product eid="1948" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="1947" howMuch="1" consumeEvery="1"/>
+			</needs>
+			<products>
+				<l element="1919" howMuch="1" produceEvery="10"/>
+				<l element="174" howMuch="1" produceEvery="6"/>
+			</products>
+			<desc/>
+		</product>
+		<product eid="1949" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="1946" howMuch="1" consumeEvery="1"/>
+			</needs>
+			<products>
+				<l element="930" howMuch="1" produceEvery="10"/>
+				<l element="173" howMuch="1" produceEvery="4"/>
+			</products>
+			<desc/>
+		</product>
+		<product _name="Rubble breakdown" eid="9999" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="127" howMuch="1" consumeEvery="1"/>
+			</needs>
+			<products>
+				<l element="157" howMuch="1" produceEvery="10"/>
+				<l element="170" howMuch="1" produceEvery="10"/>
+				<l element="175" howMuch="1" produceEvery="10"/>
+				<l element="169" howMuch="1" produceEvery="10"/>
+				<l element="177" howMuch="1" produceEvery="10"/>
+			</products>
+			<desc/>
+		</product>
+	</Product>
+</data>

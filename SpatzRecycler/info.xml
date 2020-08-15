@@ -1,0 +1,28 @@
+<mod>
+  <name>Crazy Spatz's Recycling</name>
+  <description>
+Version: 2.0
+  
+The Recycler now works similar to the Composter, with six passive processes instead of the user-intensive current setup.  
+
+Each passive process runs at 1/50th the speed of the old active process (500 seconds per scrap).  Because of this, the power usage, gas emission, and light level are reduced, and the Recycler no longer produces heat (since that can't be scaled down).  The noise and comfort penalties only apply when the recycler is in active use.
+The Recycler can recycle one scrap of each type simultaneously; unlike the Composter, you cannot double up the recycling of a single type if you run out of a different type.  The power usage will, therefore, scale with the number of types being processed at once.
+
+The recycling Recipes are reworked, to produce fewer complete blocks but also give half of the raw materials needed to make more blocks.  This also produces a trickle of "rare" types and less InfraBlocks, especially in the early game before you have the electronic/optronic/advanced chain set up.
+	1 Hull Scrap -> 0.17 Hull Blocks + 0.125 Steel Plates (was 0.25 Hull Blocks)
+	1 Infra Scrap -> 0.25 Infrablocks + 0.05 Steel Plates + 0.05 Electronics Components (was 0.5 InfraBlocks)
+	1 Soft Scrap -> 0.25 Soft Blocks + 0.05 Steel Plates + 0.1 Fabrics (was 0.5 Soft blocks)
+	1 Energy Block Scrap -> 0.1 Energy Blocks + 0.17 Energy Rods (was 0.33 Infra Blocks + 0.17 Energy Rods)
+	1 Tech Block Scrap -> 0.1 Tech Blocks + 0.25 Electronics Components (was 0.33 Infra Blocks + 0.25 Electronics Components)
+
+One new recipe is added: Rubble recycling.  This Rubble recycling uses more power and produces more hazardous gases than the five scrap recycling processes.
+	1 Rubble -> 0.1 Base Metals, 0.1 Carbon, 0.1 Noble Metals, 0.1 Plastics, and 0.1 Fabrics
+
+  </description>
+  <modVersion>2.0</modVersion>
+  <author>Spatzimaus</author>
+  <minimumLoaderVersion>0.0.6</minimumLoaderVersion>
+  <gameVersions>
+    <v>0.9.0</v>
+  </gameVersions>
+</mod>

@@ -1,0 +1,26 @@
+<t>
+	<object_soylent_name id="86753091" pid="121">
+		<EN>Soylent</EN>
+	</object_soylent_name>
+	<object_soylent_desc id="86753092" pid="121">
+		<EN>Creates fertilizer out of bio-matter.  More efficient than in a chemical lab, but takes time and garden space.</EN>
+	</object_soylent_desc>
+	<object_cactus_name id="86753093" pid="121">
+		<EN>Cactus</EN>
+	</object_cactus_name>
+	<object_cactus_desc id="86753094" pid="121">
+		<EN>Collects water from the surrounding air.  More efficient than a water collector, but requires fertilizer.</EN>
+	</object_cactus_desc>
+	<object_brussels_name id="86753095" pid="121">
+		<EN>Brussels Sprouts</EN>
+	</object_brussels_name>
+	<object_brussels_desc id="86753096" pid="121">
+		<EN>A barely edible fast-growing vegetable for emergencies.  Despite the name, these will not sprout into anything; neither will you if you eat them.</EN>
+	</object_brussels_desc>
+	<object_tiberium_name id="86753097" pid="121">
+		<EN>Tiberium</EN>
+	</object_tiberium_name>
+	<object_tiberium_desc id="86753098" pid="121">
+		<EN>A crystalline pseudo-plant found near the river Tiber in Italy near the start of the apocalypse.  Very toxic.</EN>
+	</object_tiberium_desc>
+</t>

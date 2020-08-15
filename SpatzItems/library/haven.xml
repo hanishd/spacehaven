@@ -1,0 +1,238 @@
+<data>
+	<Element>
+		<me mid="9989" ec="4" costGroup="875" offsetRot="R0" nonSymmetrical="false" alternateY="false">
+			<data>
+				<l type="Object" eid="4" gridOffX="0" gridOffY="0" layer="0">
+					<element id="0" userTogglable="false" renderOnFloor="false" walkGridCost="255" lightValue="None">
+						<definedStates>
+							<l state="Standby" playAnimation="false">
+								<r0 aid="wallLightL" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="wallLightLmirror" flx="false"/>
+								<r270 aid="null" flx="false"/>
+								<wallMountLight skipCenter="false" powerTier="Decorative" color="e6e6e6ff">
+									<offset x="0" y="-1"/>
+									<second color="545958fe" ratio="0.4" dimming="125"/>
+									<flood distance="3" brightness="100"/>
+									<ray spread="300.0" smoothEdges="true" angle="270" rotate="false" rotatePerSec="0.0" distance="2" brightness="125"/>
+								</wallMountLight>
+							</l>
+							<l state="NoPowerOrError" playAnimation="false">
+								<r0 aid="wallLightL" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="wallLightLmirror" flx="false"/>
+								<r270 aid="null" flx="false"/>
+								<wallMountLight skipCenter="false" powerTier="None" color="ffffffff">
+									<flood distance="3" brightness="100"/>
+								</wallMountLight>
+							</l>
+						</definedStates>
+						<additionaFullLit x="0" y="0" mirX="0" mirY="0" atNoPower="false" atStandby="true" atInuse="true">
+							<r0 aid="wallLightLFull" flx="false"/>
+							<r90 aid="null" flx="false"/>
+							<r180 aid="wallLight1-BFull" flx="false"/>
+							<r270 aid="null" flx="false"/>
+						</additionaFullLit>
+						<features addFacilityIcons="true" noPressureDmg="false" normalState="true" produceInNormal="false" inUseState="true">
+							<stateWatchdog autoproduce="false"/>
+							<noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
+								<radiusBeauty roomDrop="20" value="30" radius="3"/>
+							</noiseAndComfort>
+						</features>
+						<wallMount type="Upper" bothSides="false"/>
+						<commonPower/>
+					</element>
+				</l>
+			</data>
+			<linked/>
+			<events/>
+			<objectInfo placeInMenu="4" disableRotation="false" disableBuildTest="false" buildInstant="false" disableAirlockTest="false" debugOnly="false" viewMode="Normal" systemPoints="0">
+				<cu>
+					<groups>
+						<l rep="875" buildTools="30">
+							<customPrice>
+								<l elementId="930" howMuch="1"/>
+							</customPrice>
+						</l>
+					</groups>
+				</cu>
+				<name tid="55318321"/>
+				<desc tid="55318322"/>
+				<guiIcon aid="build_icon_164"/>
+				<subCat id="1506"/>
+				<restrictions>
+					<l type="Floor" gridX="0" gridY="-1" sizeX="1" sizeY="1"/>
+				</restrictions>
+				<difficultyLevel skill="Construction" level="2"/>
+			</objectInfo>
+		</me>
+		<me mid="906" ec="4" costGroup="951" offsetRot="R0" nonSymmetrical="false" alternateY="false">
+			<data>
+				<l type="Object" eid="1" gridOffX="0" gridOffY="0" layer="0">
+					<element id="0" userTogglable="false" renderOnFloor="false" walkGridCost="255" lightValue="High">
+						<definedStates>
+							<l state="Standby" playAnimation="false">
+								<r0 aid="floorLight1" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="null" flx="false"/>
+								<r270 aid="null" flx="false"/>
+							</l>
+							<l state="NoPowerOrError" playAnimation="false">
+								<r0 aid="floorLight1" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="null" flx="false"/>
+								<r270 aid="null" flx="false"/>
+							</l>
+						</definedStates>
+						<additionaFullLit x="0" y="0" mirX="0" mirY="0" atNoPower="false" atStandby="true" atInuse="true">
+							<r0 aid="floorLightLight1" flx="false"/>
+							<r90 aid="null" flx="false"/>
+							<r180 aid="floorLightLight1" flx="false"/>
+							<r270 aid="null" flx="false"/>
+						</additionaFullLit>
+						<features addFacilityIcons="true" noPressureDmg="false" normalState="true" produceInNormal="false" inUseState="true"/>
+						<commonPower/>
+					</element>
+				</l>
+			</data>
+			<linked>
+				<l id="907" eid="4" gridOffX="0" gridOffY="0" rot="R0" layer="0" damageGroup="0"/>
+			</linked>
+			<events/>
+			<objectInfo placeInMenu="5" disableRotation="false" disableBuildTest="false" buildInstant="false" disableAirlockTest="false" debugOnly="false" viewMode="Normal" systemPoints="0">
+				<cu>
+					<groups>
+						<l rep="951" buildTools="10">
+							<customPrice>
+								<l elementId="1921" howMuch="1"/>
+							</customPrice>
+						</l>
+					</groups>
+				</cu>
+				<name tid="461"/>
+				<desc tid="462"/>
+				<guiIcon aid="build_icon_906"/>
+				<subCat id="1506"/>
+				<difficultyLevel skill="Construction" level="1"/>
+			</objectInfo>
+		</me>
+		<me mid="907" ec="3" costGroup="0" offsetRot="R0" nonSymmetrical="false" alternateY="false">
+			<data>
+				<l type="Light" eid="2" gridOffX="0" gridOffY="0" layer="0">
+					<element id="0" playAnimation="false" walkGridCost="0" lightValue="None">
+						<definedStates>
+							<l state="Standby">
+								<light skipCenter="false" powerTier="Decorative" color="4283a6fe">
+									<offset x="0" y="0"/>
+									<second color="234659fe" ratio="0.35" dimming="125"/>
+									<flood distance="8" brightness="255"/>
+								</light>
+							</l>
+							<l state="NoPowerOrError"/>
+						</definedStates>
+						<stateWatchdog/>
+					</element>
+				</l>
+			</data>
+			<linked/>
+			<events/>
+		</me>
+		<me mid="72" ec="1" costGroup="950" offsetRot="R0" nonSymmetrical="false" alternateY="false">
+			<data>
+				<l type="Object" eid="1" gridOffX="0" gridOffY="0" layer="0">
+					<element id="0" userTogglable="false" renderOnFloor="false" walkGridCost="255" lightValue="None">
+						<definedStates>
+							<l state="Standby" playAnimation="false">
+								<r0 aid="airvent1OF" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="airvent1B" flx="false"/>
+								<r270 aid="null" flx="false"/>
+								<wallMountLight skipCenter="false" powerTier="Decorative" color="084720fe">
+									<flood distance="3" brightness="300"/>
+								</wallMountLight>
+							</l>
+							<l state="NoPowerOrError" playAnimation="false">
+								<r0 aid="airvent1OF" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="airvent1B" flx="false"/>
+								<r270 aid="null" flx="false"/>
+							</l>
+						</definedStates>
+						<features addFacilityIcons="false" noPressureDmg="false" normalState="true" produceInNormal="false" inUseState="true">
+							<stateWatchdog autoproduce="false"/>
+							<vent on="true">
+								<r0Closed aid="airvent1CF"/>
+								<r90Closed aid="null"/>
+								<additionaFullLitOpen x="0" y="0" mirX="0" mirY="0" atNoPower="false" atStandby="true" atInuse="true">
+									<r0 aid="ventLight1" flx="true"/>
+									<r90 aid="null" flx="false"/>
+									<r180 aid="ventLight1B" flx="false"/>
+									<r270 aid="null" flx="false"/>
+								</additionaFullLitOpen>
+								<additionalFullLitClosed x="0" y="0" mirX="0" mirY="0" atNoPower="false" atStandby="true" atInuse="true">
+									<r0 aid="ventLight2" flx="true"/>
+									<r90 aid="null" flx="false"/>
+									<r180 aid="ventLight2B" flx="false"/>
+									<r270 aid="null" flx="false"/>
+								</additionalFullLitClosed>
+							</vent>
+						</features>
+						<wallMount type="Lower" bothSides="true"/>
+					</element>
+				</l>
+			</data>
+			<linked/>
+			<events/>
+			<objectInfo placeInMenu="5" disableRotation="false" disableBuildTest="false" buildInstant="false" disableAirlockTest="false" debugOnly="false" viewMode="Normal" systemPoints="0">
+				<cu>
+					<groups>
+						<l rep="950" buildTools="100">
+							<customPrice/>
+						</l>
+					</groups>
+				</cu>
+				<name tid="146"/>
+				<desc tid="147"/>
+				<guiIcon aid="build_icon_72"/>
+				<subCat id="1508"/>
+				<restrictions>
+					<l type="Floor" gridX="0" gridY="-1" sizeX="1" sizeY="1"/>
+					<l type="Floor" gridX="0" gridY="1" sizeX="1" sizeY="1"/>
+				</restrictions>
+				<difficultyLevel skill="Construction" level="1"/>
+			</objectInfo>
+		</me>
+	</Element>
+	<Product>
+		<product _name="Hat!" eid="9990" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l element="177" consumeEvery="1" howMuch="1" />
+			</needs>
+			<products>
+				<l element="481" howMuch="1" produceEvery="1" />
+			</products>
+			<desc/>
+		</product>
+		<product _name="Sunglasses!" eid="9991" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l element="1922" consumeEvery="1" howMuch="1" />
+			</needs>
+			<products>
+				<l element="488" howMuch="1" produceEvery="1" />
+			</products>
+			<desc/>
+		</product>
+		<product _name="Weaver list" eid="1934" type="Process" interactive="true" startOnly="false" itemScrapper="false" smelter="true" scrapper="false" composter="false" processValue="100">
+			<needs/>
+			<products/>
+			<list>
+				<processes>
+					<l process="1935"/>
+					<l process="9990"/>
+					<l process="9991"/>
+				</processes>
+			</list>
+			<desc/>
+		</product>
+	</Product>
+</data>

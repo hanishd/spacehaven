@@ -1,0 +1,348 @@
+<data>
+	<Element>
+		<me mid="1871" ec="4" costGroup="875" offsetRot="R0" nonSymmetrical="false" alternateY="false">
+			<data>
+				<l type="Object" eid="2" gridOffX="0" gridOffY="1" layer="0">
+					<element id="0" userTogglable="false" renderOnFloor="false" walkGridCost="255" lightValue="High">
+						<definedStates>
+							<l state="InUse" playAnimation="true">
+								<r0 aid="co2Regulator1F" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="co2Regulator1B" flx="false"/>
+								<r270 aid="null" flx="false"/>
+							</l>
+							<l state="Standby" playAnimation="false">
+								<r0 aid="co2Regulator1F" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="co2Regulator1B" flx="false"/>
+								<r270 aid="null" flx="false"/>
+								<r0off x="0" y="0"/>
+								<r180off x="0" y="0"/>
+							</l>
+						</definedStates>
+						<indicator x="15" y="34" mirX="-19" mirY="49"/>
+						<additionaFullLit x="22" y="-11" mirX="0" mirY="0" atNoPower="false" atStandby="true" atInuse="true">
+							<r0 aid="co2Regulator1Flights" flx="false"/>
+							<r90 aid="null" flx="false"/>
+							<r180 aid="null" flx="false"/>
+							<r270 aid="null" flx="false"/>
+						</additionaFullLit>
+						<features addFacilityIcons="true" noPressureDmg="false" normalState="true" produceInNormal="false" inUseState="true">
+							<produces>
+								<l valuePerSec="50" product="65" usePowerPerSec="1.0" suction="false">
+									<logic resource="64" is="LessThan" value="25"/>
+									<heat type="HeatTo" temp="Low"/>
+								</l>
+								<l valuePerSec="10" product="983" usePowerPerSec="0.2" suction="true">
+									<logic resource="971" is="GreaterThan" value="1"/>
+									<heat type="HeatTo" temp="Low"/>
+								</l>
+							</produces>
+							<stateWatchdog autoproduce="true"/>
+						</features>
+						<boxHatch x="20" y="2" boxX="20" boxY="2" in="true" out="true" flipR90="false" type2="false">
+							<activate activateOffX="0" activateOffY="-1"/>
+							<r90Pos x="-20" y="2" boxX="-20" boxY="2"/>
+						</boxHatch>
+						<commonPower/>
+					</element>
+				</l>
+			</data>
+			<linked>
+				<l id="863" eid="3" gridOffX="0" gridOffY="1" rot="R0" layer="0" damageGroup="0"/>
+				<l id="1093" eid="4" gridOffX="0" gridOffY="0" rot="R0" layer="0" damageGroup="0"/>
+			</linked>
+			<events/>
+			<objectInfo placeInMenu="4" disableRotation="false" disableBuildTest="false" buildInstant="false" disableAirlockTest="false" debugOnly="false" viewMode="CO2" systemPoints="0">
+				<cu>
+					<groups>
+						<l rep="875" buildTools="20">
+							<customPrice>
+								<l elementId="162" howMuch="1"/>
+								<l elementId="930" howMuch="1"/>
+							</customPrice>
+						</l>
+					</groups>
+				</cu>
+				<name tid="1609"/>
+				<desc tid="1610"/>
+				<guiIcon aid="build_icon_1871"/>
+				<subCat id="1515"/>
+				<restrictions>
+					<l type="Floor" gridX="0" gridY="0" sizeX="1" sizeY="1"/>
+				</restrictions>
+				<difficultyLevel skill="Construction" level="2"/>
+			</objectInfo>
+		</me>
+	</Element>
+	<Product>
+		<product _name="Soylent" eid="8675309" type="Crop">
+			<name tid="86753091" />
+			<GUIAnimation aid="fertilizerIcon1" />
+			<stages>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="10" stage="1" time="1300">
+					<needs>
+						<l consumeEvery="4" element="16" howMuch="1" />
+						<l consumeEvery="1" element="71" howMuch="1" />
+					</needs>
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato1" />
+						</l>
+					</anims>
+				</l>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="10" stage="2" time="1300">
+					<tend penalty="-75" />
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato2" />
+						</l>
+					</anims>
+				</l>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="10" stage="3" time="1300">
+					<needs>
+						<l consumeEvery="4" element="16" howMuch="1" />
+						<l consumeEvery="1" element="71" howMuch="1" />
+					</needs>
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato3" />
+						</l>
+					</anims>
+				</l>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="10" stage="4" time="1300">
+					<tend penalty="-75" />
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato4" />
+						</l>
+					</anims>
+				</l>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="10" stage="5" time="1">
+					<harvestable>
+						<products>
+							<l element="2475" howMuch="1" produceEvery="1" />
+						</products>
+					</harvestable>
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato5" />
+						</l>
+					</anims>
+				</l>
+			</stages>
+			<plantingPenalty penalty="-75" />
+			<difficulty level="3" skill="Farming" />
+			<desc tid="86753092" />
+		</product>
+		<product _name="Cactus" eid="8675310" type="Crop">
+			<name tid="86753093" />
+			<GUIAnimation aid="water1Icon1" />
+			<stages>
+				<l stage="1" time="1000" co2PerMinute="3" oxygenPerMinute="10" h2oPerMinute="-50" minTemp="283" maxTemp="333" lightNeeded="Low">
+					<needs>
+						<l element="2475" howMuch="1" consumeEvery="10" />
+					</needs>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato1"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="2" time="1000" co2PerMinute="3" oxygenPerMinute="10" h2oPerMinute="-50" minTemp="283" maxTemp="333" lightNeeded="Low">
+					<tend penalty="-50"/>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato2"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="3" time="1000" co2PerMinute="3" oxygenPerMinute="10" h2oPerMinute="-50" minTemp="283" maxTemp="333" lightNeeded="Low">
+					<needs>
+						<l element="2475" howMuch="1" consumeEvery="10" />
+					</needs>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato3"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="4" time="1000" co2PerMinute="3" oxygenPerMinute="10" h2oPerMinute="-50" minTemp="283" maxTemp="333" lightNeeded="Low">
+					<tend penalty="-50"/>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato4"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="5" time="1" co2PerMinute="3" oxygenPerMinute="10" h2oPerMinute="-50" minTemp="283" maxTemp="333" lightNeeded="Low">
+					<harvestable>
+						<products>
+							<l element="16" howMuch="2" produceEvery="1"/>
+							<l element="71" howMuch="1" produceEvery="1"/>
+						</products>
+					</harvestable>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato5"/>
+						</l>
+					</anims>
+				</l>
+			</stages>
+			<plantingPenalty penalty="-50" />
+			<difficulty level="2" skill="Farming" />
+			<desc tid="86753094" />
+		</product>
+		<product _name="BrusselsSprouts" eid="8675311" type="Crop">
+			<name tid="86753095" />
+			<GUIAnimation aid="humanCorpseIcon1" />
+			<stages>
+				<l stage="1" time="500" co2PerMinute="3" oxygenPerMinute="10" h2oPerMinute="50" minTemp="273" maxTemp="313" lightNeeded="Medium">
+					<needs>
+						<l element="16" howMuch="1" consumeEvery="4"/>
+						<l element="2475" howMuch="1" consumeEvery="10"/>
+					</needs>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato1"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="2" time="500" co2PerMinute="3" oxygenPerMinute="10" h2oPerMinute="50" minTemp="273" maxTemp="313" lightNeeded="Medium">
+					<tend penalty="-25"/>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato2"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="3" time="500" co2PerMinute="3" oxygenPerMinute="10" h2oPerMinute="50" minTemp="273" maxTemp="313" lightNeeded="Medium">
+					<needs>
+						<l element="16" howMuch="1" consumeEvery="4"/>
+					</needs>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato3"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="4" time="500" co2PerMinute="3" oxygenPerMinute="10" h2oPerMinute="50" minTemp="273" maxTemp="313" lightNeeded="Medium">
+					<tend penalty="-25"/>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato4"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="5" time="1" co2PerMinute="3" oxygenPerMinute="10" h2oPerMinute="50" minTemp="273" maxTemp="313" lightNeeded="Medium">
+					<harvestable>
+						<products>
+							<l element="984" howMuch="2" produceEvery="1"/>
+							<l element="71" howMuch="1" produceEvery="1"/>
+						</products>
+					</harvestable>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato5"/>
+						</l>
+					</anims>
+				</l>
+			</stages>
+			<plantingPenalty penalty="-25" />
+			<difficulty level="1" skill="Farming" />
+			<desc tid="86753096" />
+		</product>
+		<product _name="Tiberium" eid="8675312" type="Crop">
+			<name tid="86753097" />
+			<GUIAnimation aid="hyperiumIcon" />
+			<stages>
+				<l stage="1" time="2000" co2PerMinute="-30" oxygenPerMinute="0" h2oPerMinute="50" minTemp="253" maxTemp="353" lightNeeded="Low">
+					<needs>
+						<l element="16" howMuch="1" consumeEvery="3"/>
+						<l element="170" howMuch="1" consumeEvery="6"/>
+						<l element="2475" howMuch="1" consumeEvery="10"/>
+					</needs>
+					<products>
+						<l element="971" howMuch="100" produceEvery="1"/>
+					</products>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato1"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="2" time="2000" co2PerMinute="-30" oxygenPerMinute="0" h2oPerMinute="50" minTemp="253" maxTemp="353" lightNeeded="Low">
+					<tend penalty="-100"/>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato2"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="3" time="2000" co2PerMinute="-30" oxygenPerMinute="0" h2oPerMinute="50" minTemp="253" maxTemp="353" lightNeeded="Low">
+					<needs>
+						<l element="16" howMuch="1" consumeEvery="3"/>
+						<l element="170" howMuch="1" consumeEvery="6"/>
+						<l element="2475" howMuch="1" consumeEvery="10"/>
+					</needs>
+					<products>
+						<l element="971" howMuch="100" produceEvery="1"/>
+					</products>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato3"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="4" time="2000" co2PerMinute="-30" oxygenPerMinute="0" h2oPerMinute="50" minTemp="253" maxTemp="353" lightNeeded="Low">
+					<tend penalty="-100"/>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato4"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="5" time="2000" co2PerMinute="-30" oxygenPerMinute="0" h2oPerMinute="50" minTemp="253" maxTemp="353" lightNeeded="Low">
+					<needs>
+						<l element="16" howMuch="1" consumeEvery="3"/>
+						<l element="170" howMuch="1" consumeEvery="6"/>
+						<l element="2475" howMuch="1" consumeEvery="10"/>
+					</needs>
+					<products>
+						<l element="971" howMuch="100" produceEvery="1"/>
+					</products>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato3"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="6" time="2000" co2PerMinute="-30" oxygenPerMinute="0" h2oPerMinute="50" minTemp="253" maxTemp="353" lightNeeded="Low">
+					<tend penalty="-100"/>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato4"/>
+						</l>
+					</anims>
+				</l>
+				<l stage="7" time="1" co2PerMinute="-30" oxygenPerMinute="0" h2oPerMinute="50" minTemp="253" maxTemp="353" lightNeeded="Low">
+					<harvestable>
+						<products>
+							<l element="158" howMuch="1" produceEvery="1"/>
+							<l element="176" howMuch="1" produceEvery="1"/>
+							<l element="971" howMuch="100" produceEvery="1"/>
+						</products>
+					</harvestable>
+					<anims>
+						<l type="Single" dir="D1" useFlipped="true">
+							<animation aid="potato5"/>
+						</l>
+					</anims>
+				</l>
+			</stages>
+			<plantingPenalty penalty="-100" />
+			<difficulty level="3" skill="Farming" />
+			<desc tid="86753098" />
+		</product>
+	</Product>
+</data>

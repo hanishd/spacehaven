@@ -1,0 +1,47 @@
+<mod>
+  <name>Crazy Spatz's Refining</name>
+  <description>
+Version: 2.0
+
+Terminology: an "Active" process is one that requires a crewman with a specific skill, standing at the machine for the full duration.  A "Passive" process only requires someone to stock the materials and remove the outputs, with no speed or efficiency penalty for spacesuit rooms.
+
+This mod does three main things:
+1> Changes a number of Industrial recipes to remove some resource bottlenecks, both in amounts and ingredients
+2> Some refining processes were switched to a Passive mode, while in other cases an existing Active process gains a Passive counterpart.  To balance, these Passive processes are far slower (typically 1/20th speed) and use more total power per process.  
+3> Since you cannot combine Active and Passive processes in the same facility, several processes were moved to different places.  As a general rule, Passive facilities are larger, use more energy, produce more hazardous gases, and reduce comfort more than Active facilities.
+
+CHEMICAL REFINERY:
+> Converting Raw Chemicals to Chemicals is now handled by other facilities.  The Chemical Refinery now only includes the four Active processes that consume Chemicals.
+> The chemical formula to create plastic now uses 0.5 Carbon and 0.25 Chemicals to create 1 Plastic (was 1 Carbon and 0.2 Chemicals)
+> The chemical formula to create Fertilizer now consumes only 0.25 Chemicals (down from 0.5), but also requires 1 Bio-Matter and 0.1 Water.
+
+WATER PURIFIER:
+> Renamed to "Liquid Purifier".
+> Processes are NOT automated, but are Active duplicates of those in other facilities.  This allows for a small, safe facility that can quickly produce critical materials for emergencies.
+> The Active conversion from Raw Chemicals to Chemicals is now moved here, from the Chemical Refinery.
+
+MICRO-WEAVER:
+> The conversion from Fiber to Fabrics consumes 0.25 Fiber (was 0.2), but now also produces 0.2 Bio-Matter as waste.  It is not automated, as this facility will be used for other Active processes eventually.
+
+METAL REFINERY:
+> Renamed to "Low-Tech Refinery".
+> All processes are Passive.  Each process is inherently capped to 50 units of output product in stock; if more than this is in the ship's inventory, the process will not run.
+> Passive conversion from Ice to Water is added here.  This conversion uses the same 5:1 ratio as the Active process in the Liquid Purifier, but is very slow.
+> Passive conversion from Fibers to Fabric is added here.  This conversion uses the same 4:1 ratio as the Active process in the Micro-Weaver (and produces the same waste Bio-Matter), but is very slow.
+
+ENERGY REFINERY:
+> Renamed to "High-Tech Refinery".
+> All processes are Passive.  Each process is inherently capped to 50 units of output product in stock.
+> Passive conversion from Raw Chemicals to Chemicals is added here.  This conversion uses the same 5:1 ratio as the Active process in the Liquid Purifier, but is very slow.
+
+ELECTRONIC FABRICATOR:
+> The creation of Electronics Components now requires 0.2 Noble Metals and 0.2 Plastics (was 0.2 Noble Metals and 0.2 Base Metals).  This is primarily so that you don't have an automated process (creating steel plates) competing for a raw resource with a non-automated one.  This process is Active, as this facility will be used for other things in the future.
+
+  </description>
+  <modVersion>2.0</modVersion>
+  <author>Spatzimaus</author>
+  <minimumLoaderVersion>0.0.6</minimumLoaderVersion>
+  <gameVersions>
+    <v>0.9.0</v>
+  </gameVersions>
+</mod>

@@ -1,0 +1,466 @@
+<data>
+	<Element>
+		<me mid="979" ec="15" costGroup="0" offsetRot="R0" nonSymmetrical="false" alternateY="false">
+			<data/>
+			<linked>
+				<l id="976" eid="1" gridOffX="0" gridOffY="1" rot="R0" layer="0" damageGroup="0"/>
+				<l id="974" eid="2" gridOffX="2" gridOffY="1" rot="R0" layer="0" damageGroup="0"/>
+				<l id="977" eid="3" gridOffX="1" gridOffY="1" rot="R0" layer="0" damageGroup="0"/>
+				<l id="973" eid="4" gridOffX="0" gridOffY="3" rot="R180" layer="0" damageGroup="0"/>
+				<l id="977" eid="5" gridOffX="1" gridOffY="3" rot="R180" layer="0" damageGroup="0"/>
+				<l id="973" eid="6" gridOffX="2" gridOffY="3" rot="R180" layer="0" damageGroup="0"/>
+				<l id="980" eid="7" gridOffX="0" gridOffY="2" rot="R0" layer="0" damageGroup="0"/>
+				<l id="980" eid="8" gridOffX="1" gridOffY="2" rot="R0" layer="0" damageGroup="0"/>
+				<l id="980" eid="9" gridOffX="2" gridOffY="2" rot="R0" layer="0" damageGroup="0"/>
+				<l id="1093" eid="10" gridOffX="0" gridOffY="0" rot="R0" layer="0" damageGroup="0"/>
+				<l id="1081" eid="11" gridOffX="1" gridOffY="0" rot="R0" layer="0" damageGroup="0"/>
+				<l id="1093" eid="12" gridOffX="2" gridOffY="0" rot="R0" layer="0" damageGroup="0"/>
+				<l id="899" eid="13" gridOffX="0" gridOffY="1" rot="R0" layer="0" damageGroup="0"/>
+				<l id="899" eid="14" gridOffX="1" gridOffY="1" rot="R0" layer="0" damageGroup="0"/>
+				<l id="902" eid="15" gridOffX="1" gridOffY="3" rot="R180" layer="0" damageGroup="0"/>
+			</linked>
+			<events/>
+			<objectInfo placeInMenu="10" disableRotation="false" disableBuildTest="false" buildInstant="false" disableAirlockTest="false" debugOnly="false" viewMode="Normal" systemPoints="0">
+				<cu>
+					<groups>
+						<l rep="875" buildTools="60">
+							<customPrice>
+								<l elementId="162" howMuch="2"/>
+								<l elementId="930" howMuch="3"/>
+								<l elementId="1919" howMuch="1"/>
+							</customPrice>
+						</l>
+					</groups>
+				</cu>
+				<name tid="99993"/>
+				<desc tid="99994"/>
+				<guiIcon aid="build_icon_979"/>
+				<subCat id="1510"/>
+				<difficultyLevel skill="Construction" level="5"/>
+			</objectInfo>
+		</me>
+		<me mid="976" ec="1" costGroup="875" offsetRot="R0" nonSymmetrical="false" alternateY="false">
+			<data>
+				<l type="Object" eid="1" gridOffX="0" gridOffY="0" layer="0">
+					<element id="0" userTogglable="false" renderOnFloor="false" walkGridCost="255" lightValue="High">
+						<definedStates>
+							<l state="Standby" playAnimation="false">
+								<r0 aid="energyRefinery1FH" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="energyRefinery1BH" flx="false"/>
+								<r270 aid="null" flx="false"/>
+							</l>
+							<l state="InUse" playAnimation="true">
+								<r0 aid="energyRefinery1FH" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="energyRefinery1BH" flx="false"/>
+								<r270 aid="null" flx="false"/>
+							</l>
+						</definedStates>
+						<additionaFullLit x="0" y="0" mirX="0" mirY="0" atNoPower="false" atStandby="false" atInuse="true">
+							<r0 aid="energyRefinery1FHLights" flx="false"/>
+							<r90 aid="null" flx="false"/>
+							<r180 aid="null" flx="false"/>
+							<r270 aid="null" flx="false"/>
+						</additionaFullLit>
+						<features addFacilityIcons="false" noPressureDmg="false" normalState="true" produceInNormal="false" inUseState="true">
+							<produces>
+								<l valuePerSec="0.5" product="965" usePowerPerSec="1.5" suction="false">
+									<logic resource="172" is="GreaterThan" value="0.1"/>
+									<logic resource="178" is="LessThan" value="5"/>
+									<gas hazardGasPerSec="0.2"/>
+								</l>
+								<l valuePerSec="0.2" product="965" usePowerPerSec="0.6" suction="false">
+									<logic resource="172" is="GreaterThan" value="0.1"/>
+									<logic resource="178" is="LessThan" value="20"/>
+									<gas hazardGasPerSec="0.08"/>
+								</l>
+								<l valuePerSec="0.05" product="965" usePowerPerSec="0.2" suction="false">
+									<logic resource="172" is="GreaterThan" value="0.1"/>
+									<logic resource="178" is="LessThan" value="50"/>
+									<gas hazardGasPerSec="0.02"/>
+								</l>
+								<l valuePerSec="0.5" product="964" usePowerPerSec="1.5" suction="false">
+									<logic resource="158" is="GreaterThan" value="0.1"/>
+									<logic resource="174" is="LessThan" value="5"/>
+									<gas hazardGasPerSec="0.2"/>
+								</l>
+								<l valuePerSec="0.2" product="964" usePowerPerSec="0.6" suction="false">
+									<logic resource="158" is="GreaterThan" value="0.1"/>
+									<logic resource="174" is="LessThan" value="20"/>
+									<gas hazardGasPerSec="0.08"/>
+								</l>
+								<l valuePerSec="0.05" product="964" usePowerPerSec="0.2" suction="false">
+									<logic resource="158" is="GreaterThan" value="0.1"/>
+									<logic resource="174" is="LessThan" value="50"/>
+									<gas hazardGasPerSec="0.02"/>
+								</l>
+								<l valuePerSec="0.5" product="9996" usePowerPerSec="1.5" suction="false">
+									<logic resource="171" is="GreaterThan" value="0.1"/>
+									<logic resource="176" is="LessThan" value="5"/>
+									<gas hazardGasPerSec="0.2"/>
+								</l>
+								<l valuePerSec="0.2" product="9996" usePowerPerSec="0.6" suction="false">
+									<logic resource="171" is="GreaterThan" value="0.1"/>
+									<logic resource="176" is="LessThan" value="20"/>
+									<gas hazardGasPerSec="0.08"/>
+								</l>
+								<l valuePerSec="0.05" product="9996" usePowerPerSec="0.2" suction="false">
+									<logic resource="171" is="GreaterThan" value="0.1"/>
+									<logic resource="176" is="LessThan" value="50"/>
+									<gas hazardGasPerSec="0.02"/>
+								</l>
+							</produces>
+							<stateWatchdog autoproduce="true"/>
+							<noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
+								<radiusBeauty roomDrop="40" value="-60" radius="12"/>
+							</noiseAndComfort>
+						</features>
+						<boxHatch x="19" y="-2" boxX="19" boxY="-2" in="true" out="false" flipR90="false" type2="false">
+							<activate activateOffX="0" activateOffY="-1"/>
+							<r90Pos x="-19" y="-2" boxX="-19" boxY="-2"/>
+						</boxHatch>
+						<commonPower/>
+					</element>
+				</l>
+			</data>
+			<linked/>
+			<events/>
+		</me>
+		<me mid="947" ec="18" costGroup="0" offsetRot="R0" nonSymmetrical="false" alternateY="false">
+			<data/>
+			<linked>
+				<l id="243" eid="1" gridOffX="0" gridOffY="1" rot="R90" layer="0" damageGroup="0"/>
+				<l id="243" eid="2" gridOffX="0" gridOffY="2" rot="R90" layer="0" damageGroup="0"/>
+				<l id="792" eid="3" gridOffX="1" gridOffY="1" rot="R0" layer="0" damageGroup="0"/>
+				<l id="240" eid="4" gridOffX="1" gridOffY="2" rot="R0" layer="0" damageGroup="0"/>
+				<l id="244" eid="6" gridOffX="2" gridOffY="1" rot="R270" layer="0" damageGroup="0"/>
+				<l id="243" eid="10" gridOffX="3" gridOffY="2" rot="R270" layer="0" damageGroup="0"/>
+				<l id="238" eid="13" gridOffX="2" gridOffY="2" rot="R270" layer="0" damageGroup="0"/>
+				<l id="626" eid="14" gridOffX="3" gridOffY="1" rot="R0" layer="0" damageGroup="0"/>
+				<l id="1081" eid="15" gridOffX="0" gridOffY="0" rot="R0" layer="0" damageGroup="0"/>
+				<l id="1093" eid="16" gridOffX="1" gridOffY="0" rot="R0" layer="0" damageGroup="0"/>
+				<l id="1081" eid="17" gridOffX="2" gridOffY="0" rot="R0" layer="0" damageGroup="0"/>
+				<l id="1093" eid="18" gridOffX="3" gridOffY="0" rot="R0" layer="0" damageGroup="0"/>
+			</linked>
+			<events/>
+			<objectInfo placeInMenu="7" disableRotation="false" disableBuildTest="false" buildInstant="false" disableAirlockTest="false" debugOnly="false" viewMode="Normal" systemPoints="0">
+				<cu>
+					<groups>
+						<l rep="875" buildTools="60">
+							<customPrice>
+								<l elementId="162" howMuch="4"/>
+								<l elementId="930" howMuch="2"/>
+							</customPrice>
+						</l>
+					</groups>
+				</cu>
+				<name tid="99991"/>
+				<desc tid="99992"/>
+				<guiIcon aid="build_icon_947"/>
+				<subCat id="1510"/>
+				<difficultyLevel skill="Construction" level="5"/>
+			</objectInfo>
+		</me>
+		<me mid="792" ec="1" costGroup="875" offsetRot="R0" nonSymmetrical="false" alternateY="false">
+			<data>
+				<l type="Object" eid="1" gridOffX="0" gridOffY="0" layer="0">
+					<element id="0" userTogglable="false" renderOnFloor="false" walkGridCost="255" lightValue="High">
+						<definedStates>
+							<l state="Standby" playAnimation="false">
+								<r0 aid="scrapper4FH" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="scrapper4BH" flx="false"/>
+								<r270 aid="null" flx="false"/>
+							</l>
+							<l state="InUse" playAnimation="false">
+								<r0 aid="scrapper4FH" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="scrapper4BH" flx="false"/>
+								<r270 aid="null" flx="false"/>
+							</l>
+						</definedStates>
+						<features addFacilityIcons="false" noPressureDmg="false" normalState="true" produceInNormal="false" inUseState="true">
+							<produces>
+								<l valuePerSec="0.5" product="1931" usePowerPerSec="2.0" suction="false">
+									<logic resource="157" is="GreaterThan" value="0.1"/>
+									<logic resource="170" is="GreaterThan" value="0.1"/>
+									<logic resource="1922" is="LessThan" value="5"/>
+									<gas hazardGasPerSec="0.2"/>
+								</l>
+								<l valuePerSec="0.2" product="1931" usePowerPerSec="0.8" suction="false">
+									<logic resource="157" is="GreaterThan" value="0.1"/>
+									<logic resource="170" is="GreaterThan" value="0.1"/>
+									<logic resource="1922" is="LessThan" value="20"/>
+									<gas hazardGasPerSec="0.2"/>
+								</l>
+								<l valuePerSec="0.05" product="1931" usePowerPerSec="0.2" suction="false">
+									<logic resource="157" is="GreaterThan" value="0.1"/>
+									<logic resource="170" is="GreaterThan" value="0.1"/>
+									<logic resource="1922" is="LessThan" value="50"/>
+									<gas hazardGasPerSec="0.2"/>
+								</l>
+								<l valuePerSec="1" product="9998" usePowerPerSec="1.0" suction="false">
+									<logic resource="40" is="GreaterThan" value="0.1"/>
+									<logic resource="16" is="LessThan" value="5"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="0.4" product="9998" usePowerPerSec="0.4" suction="false">
+									<logic resource="40" is="GreaterThan" value="0.1"/>
+									<logic resource="16" is="LessThan" value="20"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="0.1" product="9998" usePowerPerSec="0.1" suction="false">
+									<logic resource="40" is="GreaterThan" value="0.1"/>
+									<logic resource="16" is="LessThan" value="50"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="0.5" product="9997" usePowerPerSec="1.0" suction="false">
+									<logic resource="1932" is="GreaterThan" value="0.1"/>
+									<logic resource="177" is="LessThan" value="5"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="0.2" product="9997" usePowerPerSec="0.4" suction="false">
+									<logic resource="1932" is="GreaterThan" value="0.1"/>
+									<logic resource="177" is="LessThan" value="20"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="0.05" product="9997" usePowerPerSec="0.1" suction="false">
+									<logic resource="1932" is="GreaterThan" value="0.1"/>
+									<logic resource="177" is="LessThan" value="50"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+							</produces>
+							<stateWatchdog autoproduce="true"/>
+							<noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
+								<radiusBeauty roomDrop="40" value="-60" radius="12"/>
+							</noiseAndComfort>
+						</features>
+						<boxHatch x="20" y="-1" boxX="20" boxY="-1" in="true" out="false" flipR90="false" type2="false">
+							<activate activateOffX="0" activateOffY="-1"/>
+						</boxHatch>
+						<commonPower/>
+					</element>
+				</l>
+			</data>
+			<linked/>
+			<events/>
+		</me>
+		<me mid="2010" ec="3" costGroup="875" offsetRot="R0" nonSymmetrical="false" alternateY="false">
+			<data>
+				<l type="Object" eid="1" gridOffX="0" gridOffY="0" layer="0">
+					<element id="0" userTogglable="false" renderOnFloor="false" walkGridCost="255" lightValue="Medium">
+						<definedStates>
+							<l state="Standby" playAnimation="false">
+								<r0 aid="waterPurifier1FH" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="waterPurifier1B" flx="false"/>
+								<r270 aid="null" flx="false"/>
+								<tasks>
+									<l task="StandWork" usage="Both" gridOffX="0" gridOffY="-1" dir="D7" setStateInUse="true">
+										<r0offset charOffX="-2" charOffY="1"/>
+										<r180offset charOffX="-2" charOffY="-1"/>
+									</l>
+								</tasks>
+							</l>
+							<l state="InUse" playAnimation="true">
+								<r0 aid="waterPurifier1FH" flx="false"/>
+								<r90 aid="null" flx="false"/>
+								<r180 aid="waterPurifier1B" flx="false"/>
+								<r270 aid="null" flx="false"/>
+							</l>
+						</definedStates>
+						<additionaFullLit x="0" y="0" mirX="0" mirY="0" atNoPower="false" atStandby="true" atInuse="true">
+							<r0 aid="waterPurifier1FHLights" flx="false"/>
+							<r90 aid="null" flx="false"/>
+							<r180 aid="null" flx="false"/>
+							<r270 aid="null" flx="false"/>
+						</additionaFullLit>
+						<features addFacilityIcons="true" noPressureDmg="false" normalState="true" produceInNormal="false" inUseState="true">
+							<produces>
+								<l valuePerSec="10" product="2012" usePowerPerSec="15.0" suction="false">
+									<heat type="HeatTo" temp="Medium"/>
+								</l>
+							</produces>
+							<stateWatchdog autoproduce="false"/>
+							<noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
+								<noise noise="10.0">
+									<audio auid="null"/>
+								</noise>
+								<radiusBeauty roomDrop="2" value="-20" radius="4"/>
+							</noiseAndComfort>
+						</features>
+						<boxHatch x="20" y="2" boxX="20" boxY="2" in="true" out="false" flipR90="false" type2="false">
+							<activate activateOffX="0" activateOffY="-1"/>
+						</boxHatch>
+						<commonPower/>
+					</element>
+				</l>
+			</data>
+			<linked>
+				<l id="2014" eid="2" gridOffX="1" gridOffY="0" rot="R0" layer="0" damageGroup="0"/>
+				<l id="2450" eid="3" gridOffX="0" gridOffY="0" rot="R90" layer="0" damageGroup="0"/>
+			</linked>
+			<events/>
+			<objectInfo placeInMenu="2" disableRotation="false" disableBuildTest="false" buildInstant="false" disableAirlockTest="false" debugOnly="false" viewMode="Normal" systemPoints="0">
+				<cu>
+					<groups>
+						<l rep="875" buildTools="10">
+							<customPrice>
+								<l elementId="162" howMuch="1"/>
+								<l elementId="930" howMuch="1"/>
+							</customPrice>
+						</l>
+					</groups>
+				</cu>
+				<name tid="99995"/>
+				<desc tid="99996"/>
+				<guiIcon aid="build_icon_2010"/>
+				<subCat id="1510"/>
+				<restrictions>
+					<l type="Floor" gridX="0" gridY="-1" sizeX="2" sizeY="1"/>
+				</restrictions>
+				<difficultyLevel skill="Construction" level="1"/>
+			</objectInfo>
+		</me>
+	</Element>
+	<Product>
+		<product _name="Chemical Refinery list" eid="963" type="Process" interactive="true" startOnly="false" itemScrapper="false" smelter="true" scrapper="false" composter="false" processValue="100">
+			<needs/>
+			<products/>
+			<list>
+				<processes>
+					<l process="2416"/>
+					<l process="2054"/>
+					<l process="2059"/>
+					<l process="2476"/>
+				</processes>
+			</list>
+			<desc/>
+		</product>
+		<product _name="Liquid Purifier list" eid="2012" type="Process" interactive="true" startOnly="false" itemScrapper="false" smelter="true" scrapper="false" composter="false" processValue="100">
+			<needs/>
+			<products/>
+			<list>
+				<processes>
+					<l process="41"/>
+					<l process="2011"/>
+				</processes>
+			</list>
+			<desc/>
+		</product>
+		<product _name="Chemical refining (passive)" eid="9996" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="171" howMuch="1" consumeEvery="5"/>
+			</needs>
+			<products>
+				<l element="176" howMuch="1" produceEvery="1"/>
+			</products>
+			<desc/>
+		</product>
+		<product _name="Energium refining" eid="964" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="158" howMuch="1" consumeEvery="5"/>
+			</needs>
+			<products>
+				<l element="174" howMuch="1" produceEvery="1"/>
+			</products>
+			<desc/>
+		</product>
+		<product _name="Hyperium refining" eid="965" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="172" howMuch="2" consumeEvery="1"/>
+			</needs>
+			<products>
+				<l element="178" howMuch="1" produceEvery="1"/>
+			</products>
+			<desc/>
+		</product>
+		<product _name="Electronics recipe" eid="966" type="Process" interactive="true" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="169" howMuch="1" consumeEvery="5"/>
+				<l element="175" howMuch="1" consumeEvery="5"/>
+			</needs>
+			<products>
+				<l element="173" howMuch="1" produceEvery="1"/>
+			</products>
+			<difficulty skill="Industry" level="3"/>
+			<desc/>
+		</product>
+		<product _name="Plastic (chemlab)" eid="2416" type="Process" interactive="true" startOnly="false" itemScrapper="false" smelter="false" scrapper="true" composter="false" processValue="100">
+			<needs>
+				<l element="170" howMuch="1" consumeEvery="2"/>
+				<l element="176" howMuch="1" consumeEvery="4"/>
+			</needs>
+			<products>
+				<l element="175" howMuch="1" produceEvery="1"/>
+			</products>
+			<difficulty skill="Industry" level="3"/>
+			<desc/>
+		</product>
+		<product _name="Fertilizer (chemlab)" eid="2476" type="Process" interactive="true" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="176" howMuch="1" consumeEvery="4"/>
+				<l element="16" howMuch="1" consumeEvery="10"/>
+				<l element="71" howMuch="1" consumeEvery="1"/>
+			</needs>
+			<products>
+				<l element="2475" howMuch="1" produceEvery="1"/>
+			</products>
+			<difficulty skill="Industry" level="3"/>
+			<desc/>
+		</product>
+		<product _name="Fabric (active)" eid="1935" type="Process" interactive="true" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="1932" howMuch="1" consumeEvery="4"/>
+			</needs>
+			<products>
+				<l element="177" howMuch="1" produceEvery="1"/>
+				<l element="71" howMuch="1" produceEvery="5"/>
+			</products>
+			<difficulty skill="Industry" level="1"/>
+			<desc/>
+		</product>
+		<product _name="Fabric (passive)" eid="9997" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="1932" howMuch="1" consumeEvery="4"/>
+			</needs>
+			<products>
+				<l element="177" howMuch="1" produceEvery="1"/>
+				<l element="71" howMuch="1" produceEvery="5"/>
+			</products>
+			<desc/>
+		</product>
+		<product _name="Steel Plates" eid="1931" type="Process" interactive="false" startOnly="false" itemScrapper="false" smelter="false" scrapper="false" composter="false" processValue="100">
+			<needs>
+				<l element="170" howMuch="1" consumeEvery="5"/>
+				<l element="157" howMuch="1" consumeEvery="5"/>
+			</needs>
+			<products>
+				<l element="1922" howMuch="1" produceEvery="1"/>
+			</products>
+			<desc/>
+		</product>
+		<product _name="Ice to Water (passive)" eid="9998" interactive="false" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l element="40" consumeEvery="5" howMuch="1" />
+			</needs>
+			<products>
+				<l element="16" howMuch="1" produceEvery="1" />
+			</products>
+			<desc/>
+		</product>
+		<product _name="Low-Tech Refinery list (unused)" eid="181" type="Process" interactive="true" startOnly="false" itemScrapper="false" smelter="true" scrapper="false" composter="false" processValue="100">
+			<needs/>
+			<products/>
+			<list>
+				<processes>
+					<l process="1931"/>
+					<l process="9997"/>
+					<l process="9998"/>
+				</processes>
+			</list>
+			<desc/>
+		</product>
+	</Product>
+</data>
