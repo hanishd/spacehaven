@@ -37,6 +37,8 @@ ENERGY REFINERY:
 ELECTRONIC FABRICATOR:
 > The creation of Electronics Components now requires 0.2 Noble Metals and 0.2 Plastics (was 0.2 Noble Metals and 0.2 Base Metals).  This is primarily so that you don't have an automated process (creating steel plates) competing for a raw resource with a non-automated one.  This process is Active, as this facility will be used for other things in the future.
 
+(add active steel plate recipe to assembler?)
+
   </description>
   <modVersion>2.0</modVersion>
   <author>Spatzimaus</author>

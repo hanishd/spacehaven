@@ -67,17 +67,47 @@
 							<produces>
 								<l valuePerSec="2" product="965" usePowerPerSec="0.5" suction="false">
 									<logic resource="172" is="GreaterThan" value="0.1"/>
-									<logic resource="178" is="LessThan" value="10"/>
+									<logic resource="178" is="LessThan" value="5"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="1" product="965" usePowerPerSec="0.25" suction="false">
+									<logic resource="172" is="GreaterThan" value="0.1"/>
+									<logic resource="178" is="LessThan" value="20"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="1" product="965" usePowerPerSec="0.25" suction="false">
+									<logic resource="172" is="GreaterThan" value="0.1"/>
+									<logic resource="178" is="LessThan" value="50"/>
 									<gas hazardGasPerSec="0.1"/>
 								</l>
 								<l valuePerSec="2" product="964" usePowerPerSec="0.5" suction="false">
 									<logic resource="158" is="GreaterThan" value="0.1"/>
-									<logic resource="174" is="LessThan" value="10"/>
+									<logic resource="174" is="LessThan" value="5"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="1" product="964" usePowerPerSec="0.25" suction="false">
+									<logic resource="158" is="GreaterThan" value="0.1"/>
+									<logic resource="174" is="LessThan" value="20"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="1" product="964" usePowerPerSec="0.25" suction="false">
+									<logic resource="158" is="GreaterThan" value="0.1"/>
+									<logic resource="174" is="LessThan" value="50"/>
 									<gas hazardGasPerSec="0.1"/>
 								</l>
 								<l valuePerSec="2" product="9996" usePowerPerSec="0.5" suction="false">
 									<logic resource="171" is="GreaterThan" value="0.1"/>
-									<logic resource="176" is="LessThan" value="10"/>
+									<logic resource="176" is="LessThan" value="5"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="1" product="9996" usePowerPerSec="0.25" suction="false">
+									<logic resource="171" is="GreaterThan" value="0.1"/>
+									<logic resource="176" is="LessThan" value="20"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="1" product="9996" usePowerPerSec="0.25" suction="false">
+									<logic resource="171" is="GreaterThan" value="0.1"/>
+									<logic resource="176" is="LessThan" value="50"/>
 									<gas hazardGasPerSec="0.1"/>
 								</l>
 							</produces>
@@ -155,17 +185,49 @@
 								<l valuePerSec="2" product="1931" usePowerPerSec="0.5" suction="false">
 									<logic resource="157" is="GreaterThan" value="0.1"/>
 									<logic resource="170" is="GreaterThan" value="0.1"/>
-									<logic resource="1922" is="LessThan" value="10"/>
+									<logic resource="1922" is="LessThan" value="5"/>
 									<gas hazardGasPerSec="0.2"/>
+								</l>
+								<l valuePerSec="1" product="1931" usePowerPerSec="0.25" suction="false">
+									<logic resource="157" is="GreaterThan" value="0.1"/>
+									<logic resource="170" is="GreaterThan" value="0.1"/>
+									<logic resource="1922" is="LessThan" value="20"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="1" product="1931" usePowerPerSec="0.25" suction="false">
+									<logic resource="157" is="GreaterThan" value="0.1"/>
+									<logic resource="170" is="GreaterThan" value="0.1"/>
+									<logic resource="1922" is="LessThan" value="50"/>
+									<gas hazardGasPerSec="0.1"/>
 								</l>
 								<l valuePerSec="2" product="9998" usePowerPerSec="0.2" suction="false">
 									<logic resource="40" is="GreaterThan" value="0.1"/>
-									<logic resource="16" is="LessThan" value="10"/>
+									<logic resource="16" is="LessThan" value="5"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="1" product="9998" usePowerPerSec="0.1" suction="false">
+									<logic resource="40" is="GreaterThan" value="0.1"/>
+									<logic resource="16" is="LessThan" value="20"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="1" product="9998" usePowerPerSec="0.1" suction="false">
+									<logic resource="40" is="GreaterThan" value="0.1"/>
+									<logic resource="16" is="LessThan" value="50"/>
 									<gas hazardGasPerSec="0.1"/>
 								</l>
 								<l valuePerSec="2" product="9997" usePowerPerSec="0.2" suction="false">
 									<logic resource="1932" is="GreaterThan" value="0.1"/>
-									<logic resource="177" is="LessThan" value="10"/>
+									<logic resource="177" is="LessThan" value="5"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="1" product="9997" usePowerPerSec="0.1" suction="false">
+									<logic resource="1932" is="GreaterThan" value="0.1"/>
+									<logic resource="177" is="LessThan" value="20"/>
+									<gas hazardGasPerSec="0.1"/>
+								</l>
+								<l valuePerSec="1" product="9997" usePowerPerSec="0.1" suction="false">
+									<logic resource="1932" is="GreaterThan" value="0.1"/>
+									<logic resource="177" is="LessThan" value="50"/>
 									<gas hazardGasPerSec="0.1"/>
 								</l>
 							</produces>
