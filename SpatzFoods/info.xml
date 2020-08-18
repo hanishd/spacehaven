@@ -6,31 +6,33 @@ Version: 2.0
 Adds several new crops to the game, all of which can be used in standard grow beds.  Some mimic some existing processes, and are more efficient than straight industrial production.  Others provide a semi-renewable supply of resources that might be otherwise hard to find in some systems.  Either way, they tie up a valuable grow bed (with all of the related facilities and large amount of space required), and take a long time to produce results (with multiple user-intensive steps along the way).
 
 1> Soylent
-Cost: 0.5 Water and 2 Bio-Matter
+Cost: 0.5 Water and 4 Bio-Matter
 Generates: 1 Fertilizer. Produces little oxygen.
 Requires a level 3 Botanist
 Time: 1300s (same as normal crops)
 
 2> Cactus
 Cost: 0.2 Fertilizer
-Generates: 2 Water, 1 Bio-Matter.  Absorbs water vapor from the air while growing.
+Generates: 1 Water, 1 Bio-Matter.  Absorbs water vapor from the air while growing.
 Requires a level 2 Botanist.  Temperature range is warmer than other crops.
 Time: 1000s
 
 3> Brussels Sprouts
-Cost: 0.5 Water and 0.1 Fertilizer
-Generates: 2 Monster Meat (a barely edible food, probably poisonous, for emergency use only) and 1 Bio-Matter
+Cost: 0.5 Water and 0.2 Fertilizer
+Generates: 1 Monster Meat (a barely edible food, probably poisonous, for emergency use only) and 1 Bio-Matter
 Requires a level 1 Botanist
 Time: 500s
 
 4> Tiberium
 Cost: 1 Water, 0.5 Carbon, 0.3 Fertilizer
-Generates: 1 Energium, 1 Chemicals.  Produces CO2 and hazardous gases.
+Generates: 1 Energium, 1 Chemicals.  Produces CO2 and hazardous gases as it grows.
 Requires a level 3 Botanist.  Temperature range is much wider than other crops.
-Time: 2000s, with three user steps before harvest instead of the usual 2.
+Time: 2000s, with three user steps before harvest instead of the usual two.
 
 Additional modifications:
 > Add weak Hazardous Gas filtering (20% of speed of the Gas Scrubber) to the CO2 Generator, to help with crops like Tiberium that produce hazardous waste.  That way, you're not sticking a Gas Scrubber in the same room as a CO2 Generator.
+
+(fungus: bio-matter -> artificial meat)
 
   </description>
   <modVersion>2.0</modVersion>

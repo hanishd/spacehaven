@@ -83,7 +83,7 @@
 				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="10" stage="1" time="1300">
 					<needs>
 						<l consumeEvery="4" element="16" howMuch="1" />
-						<l consumeEvery="1" element="71" howMuch="1" />
+						<l consumeEvery="1" element="71" howMuch="2" />
 					</needs>
 					<anims>
 						<l dir="D1" type="Single" useFlipped="true">
@@ -102,7 +102,7 @@
 				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="10" stage="3" time="1300">
 					<needs>
 						<l consumeEvery="4" element="16" howMuch="1" />
-						<l consumeEvery="1" element="71" howMuch="1" />
+						<l consumeEvery="1" element="71" howMuch="2" />
 					</needs>
 					<anims>
 						<l dir="D1" type="Single" useFlipped="true">
@@ -178,7 +178,7 @@
 				<l stage="5" time="1" co2PerMinute="3" oxygenPerMinute="10" h2oPerMinute="-50" minTemp="283" maxTemp="333" lightNeeded="Low">
 					<harvestable>
 						<products>
-							<l element="16" howMuch="2" produceEvery="1"/>
+							<l element="16" howMuch="1" produceEvery="1"/>
 							<l element="71" howMuch="1" produceEvery="1"/>
 						</products>
 					</harvestable>
@@ -219,6 +219,7 @@
 				<l stage="3" time="500" co2PerMinute="3" oxygenPerMinute="10" h2oPerMinute="50" minTemp="273" maxTemp="313" lightNeeded="Medium">
 					<needs>
 						<l element="16" howMuch="1" consumeEvery="4"/>
+						<l element="2475" howMuch="1" consumeEvery="10"/>
 					</needs>
 					<anims>
 						<l type="Single" dir="D1" useFlipped="true">
@@ -237,7 +238,7 @@
 				<l stage="5" time="1" co2PerMinute="3" oxygenPerMinute="10" h2oPerMinute="50" minTemp="273" maxTemp="313" lightNeeded="Medium">
 					<harvestable>
 						<products>
-							<l element="984" howMuch="2" produceEvery="1"/>
+							<l element="984" howMuch="1" produceEvery="1"/>
 							<l element="71" howMuch="1" produceEvery="1"/>
 						</products>
 					</harvestable>
